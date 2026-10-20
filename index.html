@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AROKIA — Construcción e Ingeniería Inmobiliaria S.A.C. Contratistas generales en Lima, Perú. Especialistas en edificación multifamiliar, comercial y corporativa, cálculo estructural y gestión integral de obras.">
+  <meta name="keywords" content="constructora Lima, construcción inmobiliaria, contratista general, ingeniería estructural, obras civiles, edificación multifamiliar, aisladores sísmicos, BIM">
+  <meta name="author" content="AROKIA Ingeniería Inmobiliaria S.A.C.">
+  <meta property="og:title" content="AROKIA — Construcción e Ingeniería Inmobiliaria S.A.C.">
+  <meta property="og:description" content="Contratistas generales expertos en edificación de alta complejidad, ingeniería estructural y gerencia de construcción.">
+  <meta property="og:type" content="website">
+  <title>AROKIA — Construcción e Ingeniería Inmobiliaria S.A.C.</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <img src="assets/logo.png" alt="AROKIA" class="preloader-logo">
+  </div>
+
+  <!-- ========== SELECTOR DE MODELOS DE DISEÑO (TOP BAR INTERACTIVA) ========== -->
+  <aside class="design-switcher-bar" id="design-switcher" aria-label="Selector de modelos de diseño">
+    <div class="container switcher-container">
+      <div class="switcher-label">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+        <span>Modelos de Diseño:</span>
+      </div>
+      <div class="switcher-options">
+        <button class="switcher-btn active" data-model="monolito" title="Diseño oscuro mate con gran tipografía arquitectónica">
+          <span class="switcher-num">1</span>
+          <span>Monolito Industrial</span>
+        </button>
+        <button class="switcher-btn" data-model="suizo" title="Diseño editorial minimalista con líneas puras y blanco hormigón">
+          <span class="switcher-num">2</span>
+          <span>Brutalismo Suizo</span>
+        </button>
+        <button class="switcher-btn" data-model="split" title="Diseño a pantalla dividida 50/50 con fotografía full-bleed">
+          <span class="switcher-num">3</span>
+          <span>Split Cinematográfico</span>
+        </button>
+        <button class="switcher-btn" data-model="corporativo" title="Diseño corporativo clásico para contratistas B2B">
+          <span class="switcher-num">4</span>
+          <span>Corporativo Clásico</span>
+        </button>
+        <button class="switcher-btn" id="btn-ver-bocetos" style="background:rgba(76,175,80,0.2); border-color:#4CAF50; color:#A7F3D0;" title="Ver bocetos gráficos de las 4 propuestas">
+          <span>🖼️ Ver Bocetos</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== TOP BAR CONTRATISTA GENERAL ========== -->
+  <aside class="contractor-top-bar" aria-label="Información corporativa de contratista">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span class="top-bar-badge">Contratistas Generales</span>
+        <span>AROKIA Ingeniería Inmobiliaria S.A.C. — Edificación de Obras Civiles para Desarrolladoras en el Perú</span>
+      </div>
+      <div class="top-bar-contact">
+        <span>📍 Oficinas & Obras: Lima, Perú</span>
+        <a href="tel:+5115550123">📞 Central: +51 (1) 555-0123</a>
+        <a href="#contacto" style="background:rgba(255,255,255,0.15); padding:2px 10px; border-radius:4px;">Mesa de Licitaciones →</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="AROKIA Construcción e Ingeniería Inmobiliaria" id="nav-logo-img">
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#modelo-contratista" class="nav-link">Modelo Contratista</a></li>
+        <li><a href="#obras" class="nav-link" data-section="obras">Obras</a></li>
+        <li><a href="proyectos.html" class="nav-link">Portafolio de Obras</a></li>
+        <li><a href="#maquinaria" class="nav-link">Maquinaria & Equipos</a></li>
+        <li><a href="#servicios" class="nav-link" data-section="servicios">Servicios</a></li>
+        <li><a href="#nosotros" class="nav-link" data-section="nosotros">Nosotros</a></li>
+        <li><a href="#avance-obra" class="nav-link" data-section="avance-obra">Avance en Vivo</a></li>
+        <li><a href="#contacto" class="nav-cta">Cotizar Obra</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO MULTI-MODEL WRAPPER (4 MODELOS DE DISEÑO) ========== -->
+  <div class="hero-multi-wrapper" id="hero-wrapper">
+
+    <!-- MODELO 1: MONOLITO INDUSTRIAL (Dark Luxury) -->
+    <section class="hero hero-model-monolito" id="hero-monolito">
+      <div class="hero-bg-monolito">
+        <img src="assets/hero/hero-construction.jpg" alt="Obra de edificación activa AROKIA" loading="eager">
+      </div>
+      <div class="hero-overlay-monolito"></div>
+      <div class="container">
+        <div class="hero-monolito-content">
+          <div class="hero-contractor-tag">
+            <span class="hero-pulse-dot"></span>
+            <span>Contratistas Generales · Edificación B2B</span>
+          </div>
+
+          <h1 class="monolito-title">INGENIERÍA Y CONSTRUCCIÓN DE GRANDES EDIFICACIONES</h1>
+
+          <div class="hero-b2b-notice">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span><strong>Construimos para desarrolladoras e inversionistas:</strong> No comercializamos departamentos. Ejecutamos el 100% de la obra civil.</span>
+          </div>
+
+          <p class="monolito-subtitle">Somos el socio constructor que materializa proyectos inmobiliarios residenciales, torres corporativas y obras comerciales de alta complejidad. Costo cerrado por suma alzada, tecnología sismo-resistente y entrega garantizada en plazo.</p>
+
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary" style="padding: 1rem 2.2rem; font-size:1.05rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              Ingresar Expediente / Cotizar Obra
+            </a>
+            <a href="proyectos.html" class="btn btn-outline" style="padding: 1rem 2.2rem; font-size:1.05rem;">
+              Ver Portafolio de Obras Civiles →
+            </a>
+          </div>
+
+          <div class="monolito-metrics-bar">
+            <div class="monolito-metric-item">
+              <div class="monolito-metric-val">+45,000 m²</div>
+              <div class="monolito-metric-lbl">Techados Construidos</div>
+            </div>
+            <div class="monolito-metric-item">
+              <div class="monolito-metric-val">25+ Obras</div>
+              <div class="monolito-metric-lbl">Entregadas a Plazo</div>
+            </div>
+            <div class="monolito-metric-item">
+              <div class="monolito-metric-val">BIM LOD 400</div>
+              <div class="monolito-metric-lbl">Lean Construction & G.050</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODELO 2: BRUTALISMO SUIZO (Pureza Editorial) -->
+    <section class="hero-model-suizo" id="hero-suizo">
+      <div class="container">
+        <div class="suizo-grid">
+          <div>
+            <div class="suizo-subtext">AROKIA · CONTRATISTAS GENERALES · LIMA, PERÚ</div>
+            <h1 class="suizo-headline">CONSTRUCCIÓN<br>DE ALTA<br>PRECISIÓN.</h1>
+            <p style="font-size: 1.15rem; color: #4A4E54; line-height: 1.6; margin-bottom: 2rem; max-width: 500px;">
+              Ingeniería estructural y ejecución de obras civiles para promotores inmobiliarios y fondos de inversión. Rigor técnico suizo, muros anclados y costo cerrado por suma alzada.
+            </p>
+            <div style="display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap;">
+              <a href="#contacto" class="btn" style="background:#0F1113; color:#FFFFFF; border-radius:0; padding:1rem 2.4rem; font-weight:700; letter-spacing:0.04em;">
+                COTIZAR OBRA →
+              </a>
+              <a href="proyectos.html" class="suizo-link">
+                EXPLORAR PORTAFOLIO TÉCNICO
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="suizo-image-box">
+              <img src="assets/hero/hero-construction.jpg" alt="Estructura de concreto armado AROKIA">
+              <div style="position:absolute; bottom:12px; left:16px; background:#0F1113; color:#FFFFFF; font-size:0.75rem; font-weight:700; padding:4px 10px; letter-spacing:0.06em;">
+                OBRA EN EJECUCIÓN · TORRE MAGNA
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="suizo-projects-strip">
+          <div class="suizo-proj-item">
+            <img src="assets/projects/project-1.jpg" alt="Edificio Magna" class="suizo-proj-thumb">
+            <div>
+              <div class="suizo-proj-title">Edificio Magna</div>
+              <div class="suizo-proj-meta">18 Pisos · 4 Sótanos · 14,500 m²</div>
+            </div>
+          </div>
+          <div class="suizo-proj-item">
+            <img src="assets/projects/project-2.jpg" alt="Edificio Vista Verde" class="suizo-proj-thumb">
+            <div>
+              <div class="suizo-proj-title">Edificio Vista Verde</div>
+              <div class="suizo-proj-meta">14 Pisos · Muros Anclados · 11,200 m²</div>
+            </div>
+          </div>
+          <div class="suizo-proj-item">
+            <img src="assets/projects/project-3.jpg" alt="Torre Los Próceres" class="suizo-proj-thumb">
+            <div>
+              <div class="suizo-proj-title">Torre Los Próceres</div>
+              <div class="suizo-proj-meta">22 Pisos · Aisladores Sísmicos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODELO 3: SPLIT-SCREEN CINEMATOGRÁFICO -->
+    <section class="hero-model-split" id="hero-split">
+      <div class="split-left-panel">
+        <div class="split-badge">EMPRESA CONSTRUCTORA B2B · CONTRATISTAS</div>
+        <h1 class="split-headline">CONSTRUIMOS<br>PARA DESARROLLADORAS</h1>
+        <p class="split-desc">
+          Nos encargamos del 100% de la ejecución en terreno: geotecnia, sótanos profundos con muros pantalla, estructuras sismo-resistentes y acabados de precisión. Tu equipo lidera el negocio inmobiliario; nosotros garantizamos la obra.
+        </p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="#contacto" class="btn btn-primary" style="padding: 1rem 2rem;">
+            Ingresar a Licitación →
+          </a>
+          <a href="proyectos.html" class="btn btn-outline" style="padding: 1rem 2rem;">
+            Ver Obras Civiles
+          </a>
+        </div>
+        <div class="split-counters">
+          <div>
+            <div class="split-counter-num">+45k</div>
+            <div class="split-counter-lbl">m² Construidos</div>
+          </div>
+          <div>
+            <div class="split-counter-num">25+</div>
+            <div class="split-counter-lbl">Obras Entregadas</div>
+          </div>
+          <div>
+            <div class="split-counter-num">100%</div>
+            <div class="split-counter-lbl">Suma Alzada</div>
+          </div>
+        </div>
+      </div>
+      <div class="split-right-panel">
+        <img src="assets/hero/hero-construction.jpg" alt="Grúa torre y edificación de gran escala AROKIA">
+        <div style="position:absolute; inset:0; background:linear-gradient(90deg, #12161C 0%, transparent 20%, transparent 80%, rgba(18,22,28,0.4) 100%); pointer-events:none;"></div>
+      </div>
+    </section>
+
+    <!-- MODELO 4: CORPORATIVO CLÁSICO (Ingeniería B2B) -->
+    <section class="hero-model-corporativo" id="hero-corporativo">
+      <div class="container">
+        <div class="corp-hero-grid">
+          <div>
+            <span class="corp-tag">Ingeniería & Contratistas Generales</span>
+            <h1 class="corp-title">Socios Estratégicos en la Construcción de Grandes Edificaciones</h1>
+            <p class="corp-desc">
+              Brindamos soluciones integrales de construcción para desarrolladores inmobiliarios e inversionistas institucionales en el Perú. Más de 15 años ejecutando proyectos residenciales y corporativos con presupuesto cerrado y cero desviaciones.
+            </p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+              <a href="#contacto" class="btn btn-primary" style="padding: 0.95rem 2rem;">
+                Cotizar Proyecto Inmobiliario →
+              </a>
+              <a href="proyectos.html" class="btn btn-outline-dark" style="padding: 0.95rem 2rem;">
+                Portafolio de Obras
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="corp-image-frame">
+              <img src="assets/engineers-bim.jpg" alt="Ingenieros y Supervisión de Obra AROKIA">
+            </div>
+          </div>
+        </div>
+
+        <div class="corp-partners-strip">
+          <div class="corp-partner-item"><span>🏗️</span> EDIFICACIONES RESIDENCIALES</div>
+          <div class="corp-partner-item"><span>🏢</span> TORRES CORPORATIVAS</div>
+          <div class="corp-partner-item"><span>📐</span> MODELADO BIM LOD 400</div>
+          <div class="corp-partner-item"><span>🛡️</span> NORMA G.050 SEGURIDAD</div>
+        </div>
+
+        <div class="corp-projects-preview">
+          <div class="corp-card">
+            <img src="assets/projects/project-1.jpg" alt="Edificio Magna">
+            <div class="corp-card-body">
+              <div class="corp-card-title">Edificio Residencial Magna</div>
+              <div class="corp-card-meta">18 Pisos · Jesús María · 14,500 m²</div>
+            </div>
+          </div>
+          <div class="corp-card">
+            <img src="assets/projects/project-2.jpg" alt="Edificio Vista Verde">
+            <div class="corp-card-body">
+              <div class="corp-card-title">Edificio Vista Verde</div>
+              <div class="corp-card-meta">14 Pisos · Miraflores · 11,200 m²</div>
+            </div>
+          </div>
+          <div class="corp-card">
+            <img src="assets/projects/project-3.jpg" alt="Torre Los Próceres">
+            <div class="corp-card-body">
+              <div class="corp-card-title">Torre Los Próceres</div>
+              <div class="corp-card-meta">22 Pisos · San Isidro · 18,900 m²</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ========== SECCIÓN: NUESTRO ROL EN LA CADENA INMOBILIARIA ========== -->
+  <section class="section developer-role-section" id="modelo-contratista">
+    <div class="container">
+      <div class="developer-role-banner reveal">
+        <div class="role-banner-text">
+          <span class="about-label" style="font-size:0.8rem;">Diferencial de Empresa Constructora</span>
+          <h3>Tu Empresa Desarrolla el Negocio Inmobiliario, Nosotros lo Construimos</h3>
+          <p>AROKIA no compite en la venta de departamentos ni en corretaje comercial. Somos el <strong>Contratista General</strong> que asume el 100% de la responsabilidad operativa en terreno: geotecnia, sótanos profundos con muros anclados, estructuras sismo-resistentes, instalaciones MEP y acabados de precisión con presupuesto cerrado.</p>
+        </div>
+        <a href="#contacto" class="btn btn-primary" style="white-space:nowrap; padding:0.9rem 1.8rem;">
+          Presentar TDR / Licitación →
+        </a>
+      </div>
+
+      <div class="role-pillars-grid">
+        <!-- Pilar 1 -->
+        <div class="role-pillar-card reveal reveal-delay-1">
+          <div class="role-pillar-number">01</div>
+          <h4 class="role-pillar-title">Especialización Neta en Construcción</h4>
+          <p class="role-pillar-desc">Tu equipo se concentra en el terreno, la concepción del proyecto y la preventa. AROKIA despliega sus ingenieros residentes, cuadrillas homologadas y maquinaria pesada para ejecutar la obra de inicio a fin.</p>
+          <ul class="role-pillar-checklist">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> No vendemos al público minorista</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Contratos B2B con Desarrolladoras</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Modalidad EPC Llave en Mano</li>
+          </ul>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="role-pillar-card reveal reveal-delay-2">
+          <div class="role-pillar-number">02</div>
+          <h4 class="role-pillar-title">Presupuesto Cerrado & Last Planner</h4>
+          <p class="role-pillar-desc">Blindamos el retorno de tu fondo o inversionistas. Compatibilizamos digitalmente las especialidades mediante BIM LOD 400 para eliminar interferencias antes de obra y congelar los sobrecostos.</p>
+          <ul class="role-pillar-checklist">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Presupuesto por Suma Alzada</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Control semanal con Last Planner</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Mitigación de riesgos geotécnicos</li>
+          </ul>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="role-pillar-card reveal reveal-delay-3">
+          <div class="role-pillar-number">03</div>
+          <h4 class="role-pillar-title">Conformidad Municipal & Sunarp</h4>
+          <p class="role-pillar-desc">Entregamos la edificación con recepción de obra formal, inspección técnica INDECI aprobada y acompañamiento hasta la Declaratoria de Fábrica e Independización de unidades registrales.</p>
+          <ul class="role-pillar-checklist">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Cero observaciones municipales</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Dossier de Calidad As-Built</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Entrega de títulos sin demoras</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== OBRAS Y PROYECTOS DESTACADOS ========== -->
+  <section class="section projects" id="obras">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="about-label" style="font-size:0.8rem;">Capacidad Constructiva Comprobada</span>
+          <h2 class="section-title">Obras y Proyectos Ejecutados</h2>
+          <p style="color:var(--text-secondary); margin-top:4px;">Edificaciones construidas bajo estándares internacionales para las principales desarrolladoras inmobiliarias del país.</p>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="carousel-btn active-btn" id="carousel-next" aria-label="Siguiente">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="carousel-track reveal reveal-delay-2" id="carousel-track">
+        <!-- Obra 1 -->
+        <article class="project-card">
+          <a href="proyecto-detalle.html?id=vista-verde" class="project-card-image" style="display:block;">
+            <img src="assets/projects/project-1.jpg" alt="Edificio Residencial Vista Verde" loading="lazy">
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <h3 class="project-card-name"><a href="proyecto-detalle.html?id=vista-verde" style="color:inherit; text-decoration:none;">Residencial Vista Verde</a></h3>
+              <span class="project-badge construction">En Construcción</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;">San Isidro — Mandante: Inversiones Pezet S.A.</p>
+            <div class="project-specs-list">
+              <span class="project-spec-pill">📐 14,850 m² techados</span>
+              <span class="project-spec-pill">🏗️ 18 pisos + 4 sótanos</span>
+              <span class="project-spec-pill">⚡ Aisladores Sísmicos LRB</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-price-preview">
+                <span class="project-price-label">Modalidad Contractual</span>
+                <span class="project-price-amount" style="font-size:0.95rem;">Contratista General EPC</span>
+              </div>
+              <a href="proyecto-detalle.html?id=vista-verde" class="btn-card-detail">Ficha Técnica →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Obra 2 -->
+        <article class="project-card">
+          <a href="proyecto-detalle.html?id=parque-central" class="project-card-image" style="display:block;">
+            <img src="assets/projects/project-2.jpg" alt="Edificio Residencial Parque Central" loading="lazy">
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <h3 class="project-card-name"><a href="proyecto-detalle.html?id=parque-central" style="color:inherit; text-decoration:none;">Residencial Parque Central</a></h3>
+              <span class="project-badge construction">En Construcción</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;">Miraflores — Mandante: Desarrollos Los Cedros</p>
+            <div class="project-specs-list">
+              <span class="project-spec-pill">📐 11,200 m² techados</span>
+              <span class="project-spec-pill">🏗️ 15 pisos + 4 sótanos</span>
+              <span class="project-spec-pill">🛡️ Disipadores Taylor Devices</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-price-preview">
+                <span class="project-price-label">Modalidad Contractual</span>
+                <span class="project-price-amount" style="font-size:0.95rem;">Construcción Llave en Mano</span>
+              </div>
+              <a href="proyecto-detalle.html?id=parque-central" class="btn-card-detail">Ficha Técnica →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Obra 3 -->
+        <article class="project-card">
+          <a href="proyecto-detalle.html?id=torre-skyline" class="project-card-image" style="display:block;">
+            <img src="assets/projects/project-3.jpg" alt="Torre Skyline" loading="lazy">
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <h3 class="project-card-name"><a href="proyecto-detalle.html?id=torre-skyline" style="color:inherit; text-decoration:none;">Torre Skyline</a></h3>
+              <span class="project-badge construction">En Construcción</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;">Surco — Mandante: Fondo Inmobiliario Skyline</p>
+            <div class="project-specs-list">
+              <span class="project-spec-pill">📐 23,400 m² techados</span>
+              <span class="project-spec-pill">🏗️ 22 pisos + 5 sótanos (-16m)</span>
+              <span class="project-spec-pill">📊 Concreto F'c 420 kg/cm²</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-price-preview">
+                <span class="project-price-label">Modalidad Contractual</span>
+                <span class="project-price-amount" style="font-size:0.95rem;">Gerencia y Construcción (EPCM)</span>
+              </div>
+              <a href="proyecto-detalle.html?id=torre-skyline" class="btn-card-detail">Ficha Técnica →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Obra 4 -->
+        <article class="project-card">
+          <a href="proyecto-detalle.html?id=bosque-urbano" class="project-card-image" style="display:block;">
+            <img src="assets/projects/project-4.jpg" alt="Conjunto Residencial Bosque Urbano" loading="lazy">
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <h3 class="project-card-name"><a href="proyecto-detalle.html?id=bosque-urbano" style="color:inherit; text-decoration:none;">Bosque Urbano</a></h3>
+              <span class="project-badge delivered">Obra Culminada</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;">Jesús María — Fideicomiso San Felipe</p>
+            <div class="project-specs-list">
+              <span class="project-spec-pill">📐 8,950 m² techados</span>
+              <span class="project-spec-pill">🏗️ 14 pisos + 2 sótanos</span>
+              <span class="project-spec-pill">✅ Entregado a Tiempo</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-price-preview">
+                <span class="project-price-label">Resultado Final</span>
+                <span class="project-price-amount" style="font-size:0.95rem; color:var(--accent);">100% Conformidad Aprobada</span>
+              </div>
+              <a href="proyecto-detalle.html?id=bosque-urbano" class="btn-card-detail">Ficha Técnica →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center reveal" style="text-align: center; margin-top: var(--space-3xl);">
+        <a href="proyectos.html" class="btn btn-outline-dark" style="padding: 0.9rem 2.5rem; font-weight:600;">
+          Ver Portafolio Completo de Obras y Fichas Técnicas →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS: EXPERIENCIA EN CONSTRUCCIÓN ========== -->
+  <section class="section about" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <p class="about-label">Experiencia & Rigor Técnico</p>
+          <h2 class="about-title">Ingeniería que edifica con precisión milimétrica</h2>
+          <p class="about-text">AROKIA es una empresa peruana especializada en construcción e ingeniería inmobiliaria. Asumimos la responsabilidad integral de la ejecución de obras de edificación: desde la geotecnia y excavaciones profundas con muros anclados, hasta cascos estructurales sismo-resistentes y acabados de precisión para desarrolladoras inmobiliarias e inversores institucionales.</p>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number" data-target="45000" data-suffix="m²">0</div>
+              <div class="stat-label">Área Construida Ejecutada</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="25" data-suffix="+">0</div>
+              <div class="stat-label">Obras Entregadas a Plazo</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label">Seguridad y Cero Accidentes</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-delay-2">
+          <img src="assets/engineers-bim.jpg" alt="Ingenieros AROKIA en supervisión de obra con tablet BIM">
+          <div class="about-visual-badge">
+            <strong>100%</strong>
+            <span>Cumplimiento Contractual</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS DE CONSTRUCCIÓN E INGENIERÍA ========== -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="about-label" style="font-size:0.8rem;">Capacidades Técnicas</span>
+          <h2 class="section-title">Servicios de Construcción e Ingeniería</h2>
+          <p style="color:var(--text-secondary); margin-top:4px;">Soluciones integrales de construcción para proyectos inmobiliarios residenciales, corporativos y comerciales.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          </div>
+          <h3 class="service-name">Construcción de Edificaciones</h3>
+          <p class="service-desc">Contratista General en obras de edificación residencial multifamiliar, torres corporativas y complejos mixtos bajo contratos de suma alzada y precios unitarios.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3 class="service-name">Ingeniería Estructural & Sismo-Resistencia</h3>
+          <p class="service-desc">Especialistas en aislamiento sísmico elastomérico (LRB), disipadores de energía de fluido viscoso, losas postensadas y diseño sismo-resistente normado.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          </div>
+          <h3 class="service-name">Gerencia de Construcción (EPC & EPCM)</h3>
+          <p class="service-desc">Administración de producción con metodología Last Planner System y Lean Construction para garantizar el cronograma, costos y calidad contractual.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3 class="service-name">Modelado BIM & VDC (3D/4D/5D)</h3>
+          <p class="service-desc">Compatibilización digital de especialidades para eliminar interferencias antes de obra, optimizar metrados de concreto/acero y acelerar los tiempos constructivos.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="service-name">Cimentaciones Profundas & Muros Anclados</h3>
+          <p class="service-desc">Excavaciones masivas en zonas urbanas densas, muros pantalla continuos, anclajes postensados activos y protección estructural de predios vecinos colindantes.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+          </div>
+          <h3 class="service-name">Construcción Sostenible (EDGE / LEED)</h3>
+          <p class="service-desc">Procesos de obra limpia con reducción de huella de carbono, reutilización de materiales y aseguramiento de requisitos para certificaciones ambientales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARQUE DE MAQUINARIA, EQUIPOS Y LOGÍSTICA DE OBRA ========== -->
+  <section class="section machinery-section" id="maquinaria">
+    <div class="container">
+      <div class="machinery-banner-container reveal">
+        <div class="machinery-banner-image">
+          <img src="assets/machinery-fleet.jpg" alt="Parque de maquinaria pesada y grúas de AROKIA en obra activa">
+        </div>
+        <div class="machinery-banner-content">
+          <span class="about-label" style="font-size:0.8rem;">Infraestructura Operativa Propia</span>
+          <h2 style="font-family:var(--font-display); font-size:2rem; color:var(--text-primary); margin:6px 0 12px 0;">Músculo Logístico y Maquinaria Pesada</h2>
+          <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:var(--space-lg);">
+            En AROKIA no dependemos de terceros para la continuidad de los frentes críticos. Disponemos de flota de grúas torre, sistemas de encofrado metálico modulado, equipos de perforación profunda para anclajes y bombeo continuo de concreto para garantizar ciclos de producción sin paradas imprevistas.
+          </p>
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <div style="background:var(--bg-tertiary); padding:10px 16px; border-radius:var(--radius-md);">
+              <strong style="color:var(--primary); font-size:1.15rem; display:block;">100%</strong>
+              <span style="font-size:0.75rem; color:var(--text-secondary); text-transform:uppercase;">Disponibilidad de Grúas</span>
+            </div>
+            <div style="background:var(--bg-tertiary); padding:10px 16px; border-radius:var(--radius-md);">
+              <strong style="color:var(--primary); font-size:1.15rem; display:block;">4 Días / Piso</strong>
+              <span style="font-size:0.75rem; color:var(--text-secondary); text-transform:uppercase;">Velocidad de Encofrado</span>
+            </div>
+            <div style="background:var(--bg-tertiary); padding:10px 16px; border-radius:var(--radius-md);">
+              <strong style="color:var(--primary); font-size:1.15rem; display:block;">Norma G.050</strong>
+              <span style="font-size:0.75rem; color:var(--text-secondary); text-transform:uppercase;">Seguridad en Obra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="machinery-grid">
+        <div class="machinery-card reveal reveal-delay-1">
+          <div class="machinery-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 22h16M7 22V4l10 5v13M12 9v13"></path></svg>
+          </div>
+          <h3 class="machinery-card-title">Grúas Torre Telescópicas</h3>
+          <p class="machinery-card-desc">Grúas Liebherr y Potain de alto tonelaje para izaje vertical simultáneo de fierro armado, prefabricados y encofrados en proyectos de hasta 30 niveles.</p>
+        </div>
+
+        <div class="machinery-card reveal reveal-delay-2">
+          <div class="machinery-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="12" x2="21" y2="12"></line><line x1="12" y1="3" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 class="machinery-card-title">Encofrados Trepantes & Losas</h3>
+          <p class="machinery-card-desc">Sistemas industrializados de placas metálicas y vigas de aluminio que garantizan aplome perfecto, tolerancias milimétricas y desencofrado acelerado.</p>
+        </div>
+
+        <div class="machinery-card reveal reveal-delay-3">
+          <div class="machinery-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <h3 class="machinery-card-title">Perforadoras para Muros Anclados</h3>
+          <p class="machinery-card-desc">Equipos hidráulicos especializados para perforación de tirantes y anclajes postensados activos de hasta 25m en sótanos profundos colindantes con vecinos.</p>
+        </div>
+
+        <div class="machinery-card reveal reveal-delay-4">
+          <div class="machinery-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="machinery-card-title">Estaciones Totales Láser & Drones</h3>
+          <p class="machinery-card-desc">Monitoreo topográfico continuo con escaneo láser y fotogrametría semanal con dron para verificar avance físico versus modelo BIM 4D.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CICLO DE PRODUCCIÓN CONSTRUCTIVA AROKIA ========== -->
+  <section class="section process-section" id="proceso">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center; flex-direction:column; align-items:center;">
+        <span class="about-label" style="font-size:0.8rem;">Estándar de Producción</span>
+        <h2 class="section-title">El Ciclo Constructivo AROKIA</h2>
+        <p style="color:var(--text-secondary); max-width:680px; margin-top:6px;">Metodología probada en más de 25 edificaciones para eliminar desviaciones de plazo y costo.</p>
+      </div>
+
+      <div class="process-steps-grid">
+        <div class="process-step-card reveal reveal-delay-1">
+          <div class="process-step-num">1</div>
+          <h4 class="process-step-title">Ingeniería de Valor & BIM</h4>
+          <p class="process-step-desc">Modelado LOD 400 y compatibilización digital de especialidades para evitar RFI en obra.</p>
+        </div>
+
+        <div class="process-step-card reveal reveal-delay-2">
+          <div class="process-step-num">2</div>
+          <h4 class="process-step-title">Sótanos & Muros Anclados</h4>
+          <p class="process-step-desc">Excavación masiva por banquetas y postensado de anclajes con cero asentamiento en vecinos.</p>
+        </div>
+
+        <div class="process-step-card reveal reveal-delay-3">
+          <div class="process-step-num">3</div>
+          <h4 class="process-step-title">Casco Sismo-Resistente</h4>
+          <p class="process-step-desc">Vaciados de concreto de alta resistencia F'c 350-420 e instalación de aisladores LRB.</p>
+        </div>
+
+        <div class="process-step-card reveal reveal-delay-4">
+          <div class="process-step-num">4</div>
+          <h4 class="process-step-title">MEP & Acabados de Obra</h4>
+          <p class="process-step-desc">Instalaciones NFPA presurizadas, fachadas ventiladas y mampostería con tolerancias milimétricas.</p>
+        </div>
+
+        <div class="process-step-card reveal reveal-delay-5">
+          <div class="process-step-num">5</div>
+          <h4 class="process-step-title">Conformidad Municipal</h4>
+          <p class="process-step-desc">Pruebas de funcionamiento, recepción de obra y soporte para independización en Sunarp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AVANCE DE OBRAS EN EJECUCIÓN ========== -->
+  <section class="section progress-section" id="avance-obra">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <span class="about-label" style="font-size:0.8rem;">Control de Producción</span>
+          <h2 class="section-title">Obras en Proceso de Construcción</h2>
+          <p style="color:var(--text-secondary); margin-top:4px;">Transparencia y control técnico: supervisa el avance constructivo de nuestras obras activas en tiempo real.</p>
+        </div>
+        <a href="proyectos.html" class="btn btn-outline-dark" style="font-size:0.85rem;">Ver Portafolio Completo</a>
+      </div>
+
+      <div class="progress-grid">
+        <!-- Obra 1 Progress -->
+        <div class="progress-card reveal reveal-delay-1">
+          <div class="progress-card-image">
+            <img src="assets/projects/project-1.jpg" alt="Vista Verde" loading="lazy">
+            <span class="progress-badge-overlay">En Construcción</span>
+          </div>
+          <div class="progress-card-content">
+            <h3 class="progress-card-title">Residencial Vista Verde</h3>
+            <p class="progress-card-district">San Isidro — 14,850 m² · 18 pisos + 4 sótanos</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-header">
+                <span class="progress-bar-label">Avance Global de Obra</span>
+                <span class="progress-bar-percent">35%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 35%;"></div>
+              </div>
+            </div>
+            <p class="progress-phase-desc">Fase actual: Muros anclados y sótanos concluidos al 100%. Vaciado de losas estructurales pisos 1 a 10 con encofrado trepante.</p>
+            <a href="proyecto-detalle.html?id=vista-verde" class="btn-card-detail" style="width:100%; justify-content:center;">Ver Ficha Técnica de Construcción →</a>
+          </div>
+        </div>
+
+        <!-- Obra 2 Progress -->
+        <div class="progress-card reveal reveal-delay-2">
+          <div class="progress-card-image">
+            <img src="assets/projects/project-2.jpg" alt="Parque Central" loading="lazy">
+            <span class="progress-badge-overlay">En Construcción</span>
+          </div>
+          <div class="progress-card-content">
+            <h3 class="progress-card-title">Residencial Parque Central</h3>
+            <p class="progress-card-district">Miraflores — 11,200 m² · 15 pisos + 4 sótanos</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-header">
+                <span class="progress-bar-label">Avance Global de Obra</span>
+                <span class="progress-bar-percent">72%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 72%;"></div>
+              </div>
+            </div>
+            <p class="progress-phase-desc">Fase actual: Estructuras al 100%. En ejecución de mampostería, instalaciones sanitarias/eléctricas y enchapes de fachada.</p>
+            <a href="proyecto-detalle.html?id=parque-central" class="btn-card-detail" style="width:100%; justify-content:center;">Ver Ficha Técnica de Construcción →</a>
+          </div>
+        </div>
+
+        <!-- Obra 3 Progress -->
+        <div class="progress-card reveal reveal-delay-3">
+          <div class="progress-card-image">
+            <img src="assets/projects/project-3.jpg" alt="Torre Skyline" loading="lazy">
+            <span class="progress-badge-overlay">En Construcción</span>
+          </div>
+          <div class="progress-card-content">
+            <h3 class="progress-card-title">Torre Skyline — Complejo Mixto</h3>
+            <p class="progress-card-district">Surco — 23,400 m² · 22 pisos + 5 sótanos (-16m)</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-header">
+                <span class="progress-bar-label">Avance Global de Obra</span>
+                <span class="progress-bar-percent">52%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width: 52%;"></div>
+              </div>
+            </div>
+            <p class="progress-phase-desc">Fase actual: 5 sótanos de estacionamiento terminados. Vaciado de núcleo central F'c 420 y losas en piso 15.</p>
+            <a href="proyecto-detalle.html?id=torre-skyline" class="btn-card-detail" style="width:100%; justify-content:center;">Ver Ficha Técnica de Construcción →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ALIANZAS CON DESARROLLADORAS E INVERSIONISTAS ========== -->
+  <section class="section investments" id="alianzas">
+    <div class="container">
+      <div class="investments-content reveal">
+        <p class="investments-label">Alianzas de Construcción</p>
+        <h2 class="investments-title">Construimos para Desarrolladoras e Inversionistas</h2>
+        <p class="investments-text">Si eres una empresa inmobiliaria, propietario de un terreno o fondo de inversión, AROKIA te ofrece el respaldo técnico y la solidez constructiva para materializar tu proyecto dentro del presupuesto y en el plazo acordado.</p>
+        <div class="invest-stats">
+          <div class="invest-stat">
+            <div class="invest-stat-value" data-target="100" data-suffix="%">0</div>
+            <div class="invest-stat-label">Conformidades de Obra Aprobadas</div>
+          </div>
+          <div class="invest-stat">
+            <div class="invest-stat-value" data-target="15" data-suffix="%">0</div>
+            <div class="invest-stat-label">Ahorro en Desperdicios con BIM</div>
+          </div>
+          <div class="invest-stat">
+            <div class="invest-stat-value" data-target="10" data-suffix=" Años">0</div>
+            <div class="invest-stat-label">Garantía Estructural por Obra</div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn-invest">Solicitar Propuesta de Construcción</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS DE CLIENTES CORPORATIVOS Y DESARROLLADORES ========== -->
+  <section class="section testimonials-section" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; flex-direction:column; align-items:center;">
+        <span class="about-label" style="font-size:0.8rem;">Respaldo Institucional</span>
+        <h2 class="section-title">Confianza de Desarrolladores y Mandantes</h2>
+        <p style="color:var(--text-secondary); max-width:650px; margin-top:8px;">Empresas inmobiliarias y fondos de inversión que confían en AROKIA como su brazo constructor.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">"Contratar a AROKIA para la construcción de Vista Verde fue la mejor decisión para nuestro fondo. La compatibilización BIM y la gestión con Last Planner redujeron los imprevistos y mantuvieron los costos bajo estricto control."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">IP</div>
+            <div>
+              <div class="testimonial-name">Ing. Fernando Alarcón</div>
+              <div class="testimonial-role">Gerente de Proyectos — Inversiones Pezet S.A.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">"Su conocimiento en sistemas sismo-resistentes y disipadores de energía es insuperable. En Parque Central cumplieron el cronograma al 100% y con cero incidentes de seguridad laboral durante toda la excavación."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">LC</div>
+            <div>
+              <div class="testimonial-name">Arq. Claudia Meneses</div>
+              <div class="testimonial-role">Directora de Operaciones — Desarrollos Los Cedros</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">"Bosque Urbano fue entregado con declaratoria de fábrica e independización sin ninguna traba municipal. La solvencia técnica de los ingenieros de AROKIA garantiza tranquilidad al inversionista."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">FS</div>
+            <div>
+              <div class="testimonial-name">Dr. Rodrigo Villarán</div>
+              <div class="testimonial-role">Representante del Fideicomiso San Felipe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO Y LICITACIONES ========== -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-label">Licitaciones & Nuevas Obras</p>
+          <h2 class="contact-title">Mesa de Licitaciones & Cotización de Obras Civiles</h2>
+          <p class="contact-text">Trabajamos exclusivamente con empresas desarrolladoras, promotores inmobiliarios y fondos de inversión. Envíanos los Términos de Referencia (TDR), planos de arquitectura o expediente técnico para preparar una propuesta técnico-económica cerrada por Suma Alzada o Precios Unitarios.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-detail-content">
+                <strong>Oficina de Operaciones e Ingeniería</strong>
+                <span>Lima, Perú</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-detail-content">
+                <strong>Teléfono / Central de Obras</strong>
+                <span>+51 (1) 555-0123</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-detail-content">
+                <strong>Correo de Licitaciones</strong>
+                <span>licitaciones@arokia.pe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-2" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre del Contacto / Cargo</label>
+              <input type="text" id="name" name="name" placeholder="Ej. Ing. Carlos Mendoza (Gerente de Proyecto)" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Empresa Desarrolladora / Inversionista</label>
+              <input type="text" id="company" name="company" placeholder="Ej. Inmobiliaria Los Andes S.A.C." required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo Corporativo</label>
+              <input type="email" id="email" name="email" placeholder="carlos@desarrolladora.pe" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono Directo</label>
+              <input type="tel" id="phone" name="phone" placeholder="+51 999 999 999" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-required">Modalidad Contractual</label>
+              <select id="service-required" name="service" style="width:100%; padding:12px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-card); color:var(--text-primary); font-family:var(--font-primary);">
+                <option value="epc">Suma Alzada EPC Llave en Mano</option>
+                <option value="estructuras">Casco Estructural, Sótanos y Muros Anclados</option>
+                <option value="gerencia">Gerencia de Construcción (CM / Last Planner)</option>
+                <option value="precios">Precios Unitarios y Especialidades</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="area">Área Techada Estimada (m²)</label>
+              <input type="text" id="area" name="area" placeholder="Ej. 14,500 m² (18 pisos, 4 sótanos)">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="plans-link">Enlace a Planos / Términos de Referencia TDR (Opcional)</label>
+            <input type="url" id="plans-link" name="plans-link" placeholder="Link de Google Drive, OneDrive, WeTransfer o BIM 360" style="width:100%; padding:12px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-card); color:var(--text-primary); font-family:var(--font-primary);">
+          </div>
+          <div class="form-group">
+            <label for="message">Alcance del Proyecto o Resumen de Licitación</label>
+            <textarea id="message" name="message" placeholder="Ubicación del lote, estado de licencias de edificación, fecha prevista de inicio de obra, requerimientos especiales..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" style="padding: 1rem; font-weight:700; font-size:1rem;">
+            Enviar a Mesa de Licitaciones de AROKIA →
+          </button>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="AROKIA" class="footer-logo" id="footer-logo-img">
+          <p class="footer-desc">AROKIA Ingeniería Inmobiliaria S.A.C. — Construcción de alta ingeniería, estructuras sismo-resistentes y gerencia de proyectos en el Perú.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#obras" class="footer-link">Obras</a></li>
+            <li><a href="proyectos.html" class="footer-link">Portafolio de Obras</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios de Construcción</a></li>
+            <li><a href="#avance-obra" class="footer-link">Avance de Obras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="#servicios" class="footer-link">Construcción de Edificaciones</a></li>
+            <li><a href="#servicios" class="footer-link">Ingeniería Estructural</a></li>
+            <li><a href="#servicios" class="footer-link">Muros Anclados y Sótanos</a></li>
+            <li><a href="#servicios" class="footer-link">Gerencia de Obras Last Planner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Licitaciones</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5115550123" class="footer-link">+51 (1) 555-0123</a></li>
+            <li><a href="mailto:licitaciones@arokia.pe" class="footer-link">licitaciones@arokia.pe</a></li>
+            <li><span class="footer-link">Lima, Perú</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 AROKIA Ingeniería Inmobiliaria S.A.C. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL PARA VER LAS PROPUESTAS DE DISEÑO EN IMÁGENES ========== -->
+  <div class="modal" id="modal-bocetos" style="display:none; position:fixed; inset:0; z-index:2000; align-items:center; justify-content:center; background:rgba(0,0,0,0.85); backdrop-filter:blur(8px); padding:20px;">
+    <div class="modal-container" style="background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:12px; max-width:1050px; width:100%; max-height:90vh; overflow-y:auto; box-shadow:0 24px 60px rgba(0,0,0,0.5);">
+      <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; padding:18px 24px; border-bottom:1px solid var(--border-color);">
+        <h3 style="font-family:var(--font-display); font-size:1.4rem; color:var(--text-primary); margin:0;">Propuestas de Diseño Visual AROKIA (4 Modelos)</h3>
+        <button id="modal-bocetos-close" style="font-size:1.8rem; line-height:1; color:var(--text-secondary); cursor:pointer; background:none; border:none;">&times;</button>
+      </div>
+      <div class="modal-body" style="padding:24px;">
+        <p style="color:var(--text-secondary); margin-bottom:20px; font-size:0.95rem;">
+          Haz clic en cualquier tarjeta para previsualizar y aplicar instantáneamente el diseño en la página web:
+        </p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;">
+          
+          <!-- Opción 1 -->
+          <div class="boceto-card" data-apply="monolito" style="border:1px solid var(--border-color); border-radius:8px; overflow:hidden; cursor:pointer; background:var(--bg-card); transition:transform 0.2s, border-color 0.2s;">
+            <img src="assets/opcion_1_monolito_dark.jpg" alt="Opción 1: Monolito Industrial" style="width:100%; height:180px; object-fit:cover;">
+            <div style="padding:14px;">
+              <span style="display:inline-block; font-size:0.7rem; font-weight:700; color:#4CAF50; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">Modelo 1</span>
+              <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Monolito Industrial (Dark Luxury)</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">Constructora México / Skanska. Oscuro mate, gran escala, tipografía pura, sin saturación.</p>
+              <button class="btn btn-primary" style="margin-top:10px; width:100%; padding:6px; font-size:0.8rem;">Activar Modelo 1</button>
+            </div>
+          </div>
+
+          <!-- Opción 2 -->
+          <div class="boceto-card" data-apply="suizo" style="border:1px solid var(--border-color); border-radius:8px; overflow:hidden; cursor:pointer; background:var(--bg-card); transition:transform 0.2s, border-color 0.2s;">
+            <img src="assets/opcion_2_brutalismo_suizo.jpg" alt="Opción 2: Brutalismo Suizo" style="width:100%; height:180px; object-fit:cover;">
+            <div style="padding:14px;">
+              <span style="display:inline-block; font-size:0.7rem; font-weight:700; color:#4CAF50; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">Modelo 2</span>
+              <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Brutalismo Suizo (Pureza Editorial)</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">Herzog & de Meuron. Blanco hormigón, división 1px, tipografía Swiss Grotesk.</p>
+              <button class="btn btn-primary" style="margin-top:10px; width:100%; padding:6px; font-size:0.8rem;">Activar Modelo 2</button>
+            </div>
+          </div>
+
+          <!-- Opción 3 -->
+          <div class="boceto-card" data-apply="split" style="border:1px solid var(--border-color); border-radius:8px; overflow:hidden; cursor:pointer; background:var(--bg-card); transition:transform 0.2s, border-color 0.2s;">
+            <img src="assets/opcion_3_cinematografico_split.jpg" alt="Opción 3: Split Cinematográfico" style="width:100%; height:180px; object-fit:cover;">
+            <div style="padding:14px;">
+              <span style="display:inline-block; font-size:0.7rem; font-weight:700; color:#4CAF50; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">Modelo 3</span>
+              <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Split-Screen Cinematográfico</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">Foster + Partners / Turner. 50% grafito / 50% fotografía full-bleed de edificación y grúas.</p>
+              <button class="btn btn-primary" style="margin-top:10px; width:100%; padding:6px; font-size:0.8rem;">Activar Modelo 3</button>
+            </div>
+          </div>
+
+          <!-- Opción 4 -->
+          <div class="boceto-card" data-apply="corporativo" style="border:1px solid var(--border-color); border-radius:8px; overflow:hidden; cursor:pointer; background:var(--bg-card); transition:transform 0.2s, border-color 0.2s;">
+            <img src="assets/opcion_4_corporativo_ingenieria.jpg" alt="Opción 4: Corporativo Clásico" style="width:100%; height:180px; object-fit:cover;">
+            <div style="padding:14px;">
+              <span style="display:inline-block; font-size:0.7rem; font-weight:700; color:#4CAF50; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px;">Modelo 4</span>
+              <h4 style="font-size:0.95rem; font-weight:700; color:var(--text-primary); margin-bottom:6px;">Corporativo Clásico (Ingeniería B2B)</h4>
+              <p style="font-size:0.8rem; color:var(--text-secondary); line-height:1.4;">Cosapi / Marcan. Fondo claro, verde AROKIA, foco en solvencia institucional.</p>
+              <button class="btn btn-primary" style="margin-top:10px; width:100%; padding:6px; font-size:0.8rem;">Activar Modelo 4</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BOTÓN FLOTANTE DE WHATSAPP ========== -->
+  <aside class="whatsapp-float-widget" aria-label="Contacto por WhatsApp">
+    <div class="whatsapp-float-tooltip">Cotiza tu obra con un ingeniero de AROKIA</div>
+    <a href="https://wa.me/51999999999?text=Hola%20AROKIA,%20deseo%20cotizar%20la%20construcci%C3%B3n%20de%20un%20proyecto%20inmobiliario" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path>
+      </svg>
+    </a>
+  </aside>
+
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

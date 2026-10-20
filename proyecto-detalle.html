@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha Técnica de Construcción — AROKIA Ingeniería Inmobiliaria S.A.C. Memoria descriptiva, planos estructurales, especificaciones técnicas y ratios constructivos.">
+  <title id="page-title">Ficha Técnica de Obra — AROKIA Construcción</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- ========== TOP BAR CONTRATISTA GENERAL ========== -->
+  <aside class="contractor-top-bar" aria-label="Información corporativa de contratista">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span class="top-bar-badge">Contratistas Generales</span>
+        <span>AROKIA Ingeniería Inmobiliaria S.A.C. — Edificación de Obras Civiles para Desarrolladoras en el Perú</span>
+      </div>
+      <div class="top-bar-contact">
+        <span>📍 Oficinas & Obras: Lima, Perú</span>
+        <a href="tel:+5115550123">📞 Central: +51 (1) 555-0123</a>
+        <a href="index.html#contacto" style="background:rgba(255,255,255,0.15); padding:2px 10px; border-radius:4px;">Mesa de Licitaciones →</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="AROKIA Construcción e Ingeniería Inmobiliaria" id="nav-logo-img">
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html" class="nav-link active">Portafolio de Obras</a></li>
+        <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="index.html#avance-obra" class="nav-link">Avance de Obras</a></li>
+        <li><a href="index.html#alianzas" class="nav-link">Alianzas</a></li>
+        <li><a href="#licitacion" class="nav-cta">Cotizar Obra</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+          <svg id="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== DETALLE HERO ========== -->
+  <header class="detail-hero">
+    <div class="container">
+      <nav class="page-breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <a href="proyectos.html">Portafolio de Obras</a>
+        <span>/</span>
+        <span id="breadcrumb-current" style="color:var(--text-primary); font-weight:600;">Ficha de Obra</span>
+      </nav>
+
+      <div class="detail-header-flex">
+        <div class="detail-title-group">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:6px;">
+            <span class="project-badge" id="hero-badge">Estado</span>
+            <span id="hero-project-type" style="font-size:0.85rem; font-weight:600; color:var(--primary); text-transform:uppercase; letter-spacing:0.05em;">Tipo de Obra</span>
+          </div>
+          <h1 id="hero-title">Nombre de la Obra</h1>
+          <p class="detail-address" id="hero-address">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Ubicación y Distrito</span>
+          </p>
+          <p id="hero-tagline" style="color:var(--text-secondary); margin-top:8px; max-width:700px; font-size:1.05rem;">Resumen de alcance</p>
+        </div>
+
+        <div class="detail-price-box">
+          <div class="detail-price-label">Cliente / Mandante</div>
+          <div class="detail-price-val" id="hero-client" style="font-size:1.25rem;">Inversiones Pezet S.A.</div>
+          <p id="hero-contract-type" style="font-size:0.85rem; color:var(--primary); font-weight:600; margin-top:4px;">Contratista General (EPC)</p>
+        </div>
+      </div>
+
+      <!-- Barra de Métricas de Construcción -->
+      <div class="metrics-strip" id="metrics-strip">
+        <!-- Generado dinámicamente -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== CONTENIDO PRINCIPAL Y SIDEBAR ========== -->
+  <main class="section" style="padding-top: var(--space-xl);">
+    <div class="container">
+      <div class="detail-main-layout">
+        
+        <!-- Columna Izquierda: Información Técnica de Obra -->
+        <div class="detail-content-col">
+          
+          <!-- 1. Galería de Obra -->
+          <section class="detail-gallery-section" aria-label="Galería de la Obra">
+            <div class="detail-gallery-main">
+              <img id="gallery-main-img" src="" alt="Vista de Obra">
+            </div>
+            <div class="detail-gallery-thumbs" id="gallery-thumbs">
+              <!-- Miniaturas dinámicas -->
+            </div>
+          </section>
+
+          <!-- 2. Memoria Descriptiva de Construcción -->
+          <section style="margin-top: var(--space-3xl);">
+            <span class="about-label" style="font-size:0.8rem;">Memoria Descriptiva</span>
+            <h2 style="font-family:var(--font-display); font-size:1.75rem; color:var(--text-primary); margin-top:4px; margin-bottom:var(--space-md);">Memoria Técnica y Retos Constructivos</h2>
+            <p id="project-description" style="color:var(--text-secondary); font-size:1.05rem; line-height:1.8;">
+              Descripción de la obra...
+            </p>
+          </section>
+
+          <!-- 3. Alcance de Servicios Ejecutados -->
+          <section style="margin-top: var(--space-2xl);">
+            <h3 style="font-size:1.35rem; color:var(--text-primary); margin-bottom:var(--space-lg);">Alcance de Contratación y Servicios Ejecutados</h3>
+            <div id="scope-services-list" style="display:flex; flex-direction:column; gap:var(--space-md);">
+              <!-- Generado dinámicamente -->
+            </div>
+          </section>
+
+          <!-- 4. Planos y Detalles de Ingeniería Estructural (SVG) -->
+          <section class="typologies-card" id="seccion-planos">
+            <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:var(--space-sm);">
+              <div>
+                <span class="about-label" style="font-size:0.8rem;">Planos & Detalles Técnicos</span>
+                <h2 style="font-family:var(--font-display); font-size:1.6rem; color:var(--text-primary); margin-top:4px;">Ingeniería Estructural y Geotecnia</h2>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-muted);">Selecciona un plano para ver la solución estructural:</p>
+            </div>
+
+            <!-- Tabs de Planos -->
+            <div class="typologies-tabs" id="drawings-nav">
+              <!-- Botones de tabs -->
+            </div>
+
+            <!-- Visualizador del Plano SVG -->
+            <div class="typology-content-grid" id="drawing-display">
+              <!-- Plano SVG arquitectónico/estructural y tabla técnica -->
+            </div>
+          </section>
+
+          <!-- 5. Ficha de Control de Calidad y Especificaciones de Materiales -->
+          <section class="engineering-seal">
+            <div class="engineering-seal-header">
+              <div class="engineering-seal-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h3 style="font-size:1.25rem; font-weight:700; color:var(--text-primary); margin:0;">Estándares de Calidad QA/QC & Seguridad Laboral</h3>
+                <p style="font-size:0.85rem; color:var(--text-secondary); margin:2px 0 0 0;">Cumplimiento normativo NTP, ACI 318, Norma G.050 y protocolos de sostenibilidad.</p>
+              </div>
+            </div>
+
+            <div class="engineering-specs-grid" id="engineering-specs-grid">
+              <!-- Generado dinámicamente -->
+            </div>
+          </section>
+
+          <!-- 6. Estimador de Ratios Constructivos para Desarrolladoras -->
+          <section class="mortgage-calc-card" id="seccion-estimador">
+            <span class="about-label" style="font-size:0.8rem;">Herramienta para Desarrolladoras</span>
+            <h2 style="font-family:var(--font-display); font-size:1.6rem; color:var(--text-primary); margin-top:4px;">Estimador de Ratios y Plazos de Construcción</h2>
+            <p style="color:var(--text-secondary); font-size:0.9rem; margin-top:4px;">Calcula una proyección técnica preliminar de insumos y tiempo de obra según el área de tu proyecto inmobiliario.</p>
+
+            <div class="calc-grid">
+              <div class="calc-inputs">
+                <!-- Slider Área Techada -->
+                <div class="calc-control">
+                  <div class="calc-control-label">
+                    <span>Área Techada Proyectada:</span>
+                    <span class="calc-control-val" id="calc-area-display">12,000 m²</span>
+                  </div>
+                  <input type="range" id="calc-area-slider" class="calc-slider" min="3000" max="30000" step="1000" value="12000">
+                </div>
+
+                <!-- Slider Niveles de Sótanos -->
+                <div class="calc-control">
+                  <div class="calc-control-label">
+                    <span>Niveles de Sótanos (Muros Anclados):</span>
+                    <span class="calc-control-val" id="calc-basements-display">3 Sótanos</span>
+                  </div>
+                  <input type="range" id="calc-basements-slider" class="calc-slider" min="1" max="5" step="1" value="3">
+                </div>
+
+                <!-- Slider Altura Pisos -->
+                <div class="calc-control">
+                  <div class="calc-control-label">
+                    <span>Pisos de Altura:</span>
+                    <span class="calc-control-val" id="calc-floors-display">16 Pisos</span>
+                  </div>
+                  <input type="range" id="calc-floors-slider" class="calc-slider" min="5" max="25" step="1" value="16">
+                </div>
+              </div>
+
+              <!-- Resultado Proyectado -->
+              <div class="calc-result-box">
+                <div class="calc-result-label">Plazo de Construcción Estimado</div>
+                <div class="calc-result-amount" id="calc-time-result">18 Meses</div>
+                <div style="font-size:0.9rem; opacity:0.9; margin: 12px 0;" id="calc-ratios-summary">
+                  Concreto estimado: ~3,600 m³<br>Acero corrugado: ~380 Toneladas
+                </div>
+                <div class="calc-result-disclaimer">
+                  * Estimación referencial para prediseño técnico. El plazo final se determina con el expediente técnico y compatibilización BIM definitiva.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 7. Avance de Obra Cronológico -->
+          <section style="margin-top: var(--space-3xl); background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-lg); padding:var(--space-2xl);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-sm);">
+              <div>
+                <span class="about-label" style="font-size:0.8rem;">Cronograma Valorizado</span>
+                <h2 style="font-family:var(--font-display); font-size:1.6rem; color:var(--text-primary); margin-top:4px;">Estado Físico de la Obra</h2>
+              </div>
+              <div style="font-size:1.5rem; font-weight:800; color:var(--primary);" id="progress-total-percent">0%</div>
+            </div>
+
+            <div class="progress-bar-container" style="margin: var(--space-lg) 0;">
+              <div class="progress-track" style="height:14px;">
+                <div class="progress-fill" id="progress-total-bar" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Fases constructivas -->
+            <div id="progress-phases-list" style="margin-top:var(--space-xl); display:flex; flex-direction:column; gap:var(--space-md);">
+              <!-- Generado dinámicamente -->
+            </div>
+          </section>
+        </div>
+
+        <!-- Columna Derecha: Sidebar Fija para Licitaciones y Cotizaciones -->
+        <aside class="detail-sidebar-col" id="licitacion">
+          <div class="detail-sidebar-sticky">
+            <h3 class="sidebar-form-title">Cotizar Obra Similar</h3>
+            <p class="sidebar-form-desc">Envíanos el anteproyecto, planos o requerimientos de tu proyecto inmobiliario para preparar una propuesta técnica y económica.</p>
+
+            <form id="construction-inquiry-form">
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="cinq-name" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Nombre Representante</label>
+                  <input type="text" id="cinq-name" required placeholder="Ing. / Lic. Nombre" style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box;">
+                </div>
+                <div class="form-group">
+                  <label for="cinq-company" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Empresa / Desarrolladora</label>
+                  <input type="text" id="cinq-company" required placeholder="Empresa S.A.C." style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box;">
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label for="cinq-email" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Correo Corporativo</label>
+                  <input type="email" id="cinq-email" required placeholder="correo@empresa.pe" style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box;">
+                </div>
+                <div class="form-group">
+                  <label for="cinq-phone" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Teléfono Directo</label>
+                  <input type="tel" id="cinq-phone" required placeholder="+51 999 999 999" style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box;">
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: var(--space-sm);">
+                <label for="cinq-scope" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Modalidad de Contrato</label>
+                <select id="cinq-scope" style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box;">
+                  <option value="epc">Construcción Integral (EPC Llave en Mano)</option>
+                  <option value="casco">Estructuras y Muros Anclados</option>
+                  <option value="cm">Gerencia de Construcción (CM)</option>
+                  <option value="consultoria">Cálculo Estructural y BIM</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: var(--space-md);">
+                <label for="cinq-message" style="font-size:0.78rem; font-weight:600; color:var(--text-secondary); display:block; margin-bottom:4px;">Ubicación y Metraje de la Obra</label>
+                <textarea id="cinq-message" rows="2" placeholder="Distrito, m² techados proyectados y fecha estimada de inicio de obra..." style="width:100%; padding:9px 11px; border-radius:var(--radius-sm); border:1px solid var(--border-color); background:var(--bg-primary); color:var(--text-primary); font-size:0.85rem; box-sizing:border-box; resize:vertical;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:11px 16px; font-weight:700; font-size:0.9rem; white-space:normal; text-align:center; box-sizing:border-box;">
+                Solicitar Propuesta Técnica de Construcción
+              </button>
+              <div id="cinq-form-response" style="margin-top:8px; font-size:0.85rem; text-align:center; display:none;"></div>
+            </form>
+
+            <div class="sidebar-action-buttons" style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+              <a href="#" id="sidebar-wa-btn" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer" style="justify-content:center; gap:8px; font-size:0.85rem; padding:9px 12px; white-space:normal; text-align:center; box-sizing:border-box;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg>
+                <span>Contactar a Ingeniería por WhatsApp</span>
+              </a>
+
+              <button id="download-dossier-btn" class="btn btn-outline-dark" style="justify-content:center; gap:8px; font-size:0.85rem; padding:9px 12px; white-space:normal; text-align:center; box-sizing:border-box;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Descargar Dossier Técnico de Obra</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== OTRAS OBRAS RELEVANTES ========== -->
+  <section class="section" style="background:var(--bg-secondary); border-top:1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div>
+          <h2 class="section-title">Otras Obras Ejecutadas por AROKIA</h2>
+          <p style="color:var(--text-secondary); margin-top:4px;">Conoce más obras de edificación que demuestran nuestra capacidad técnica y operativa.</p>
+        </div>
+        <a href="proyectos.html" class="btn btn-outline-dark" style="font-size:0.85rem;">Ver Portafolio Completo →</a>
+      </div>
+
+      <div class="catalog-grid" id="related-projects-grid">
+        <!-- Generado dinámicamente -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="AROKIA" class="footer-logo" id="footer-logo-img">
+          <p class="footer-desc">AROKIA Ingeniería Inmobiliaria S.A.C. — Construcción de alta ingeniería, estructuras sismo-resistentes y gerencia de proyectos en el Perú.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Inicio</a></li>
+            <li><a href="proyectos.html" class="footer-link">Portafolio de Obras</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Servicios de Construcción</a></li>
+            <li><a href="index.html#avance-obra" class="footer-link">Avance de Obras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#servicios" class="footer-link">Construcción de Edificaciones</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Ingeniería Estructural</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Muros Anclados y Sótanos</a></li>
+            <li><a href="index.html#servicios" class="footer-link">Gerencia de Obras Last Planner</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Licitaciones</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5115550123" class="footer-link">+51 (1) 555-0123</a></li>
+            <li><a href="mailto:licitaciones@arokia.pe" class="footer-link">licitaciones@arokia.pe</a></li>
+            <li><span class="footer-link">Lima, Perú</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 AROKIA Ingeniería Inmobiliaria S.A.C. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÓN FLOTANTE DE WHATSAPP ========== -->
+  <aside class="whatsapp-float-widget" aria-label="Contacto por WhatsApp">
+    <div class="whatsapp-float-tooltip">Cotiza tu obra con un ingeniero de AROKIA</div>
+    <a href="https://wa.me/51999999999?text=Hola%20AROKIA,%20deseo%20cotizar%20la%20construcci%C3%B3n%20de%20un%20proyecto" class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // ========== CONTROLADOR DE FICHA TÉCNICA DE CONSTRUCCIÓN ==========
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('id') || 'vista-verde';
+      const project = getProjectById(projectId);
+
+      // Metadatos y Encabezado
+      document.title = `Ficha Técnica: ${project.name} — AROKIA Construcción`;
+      document.getElementById('breadcrumb-current').textContent = project.name;
+      document.getElementById('hero-title').textContent = project.name;
+      document.getElementById('hero-project-type').textContent = project.projectType;
+      document.getElementById('hero-address').querySelector('span').textContent = `${project.address} (${project.location})`;
+      document.getElementById('hero-tagline').textContent = project.tagline;
+      document.getElementById('hero-badge').textContent = project.statusLabel;
+      document.getElementById('hero-badge').className = `project-badge ${project.badgeClass}`;
+      document.getElementById('hero-client').textContent = project.client;
+      document.getElementById('hero-contract-type').textContent = project.contractType;
+      document.getElementById('project-description').textContent = project.description;
+
+      // WhatsApp Button URL
+      const waUrl = `https://wa.me/51999999999?text=${encodeURIComponent('Hola AROKIA, deseo consultar sobre la obra ' + project.name + ' y solicitar una propuesta técnica.')}`;
+      document.getElementById('sidebar-wa-btn').href = waUrl;
+
+      // Metrics Strip de Construcción
+      const metricsContainer = document.getElementById('metrics-strip');
+      metricsContainer.innerHTML = `
+        <div class="metric-strip-item">
+          <div class="metric-strip-num">${project.builtArea}</div>
+          <div class="metric-strip-label">Área Techada</div>
+        </div>
+        <div class="metric-strip-item">
+          <div class="metric-strip-num">${project.totalLevels}</div>
+          <div class="metric-strip-label">Niveles</div>
+        </div>
+        <div class="metric-strip-item">
+          <div class="metric-strip-num">${project.concreteVolume.split(' ')[0]} m³</div>
+          <div class="metric-strip-label">Concreto Armado</div>
+        </div>
+        <div class="metric-strip-item">
+          <div class="metric-strip-num">${project.steelWeight.split(' ')[0]} Tn</div>
+          <div class="metric-strip-label">Acero Corrugado</div>
+        </div>
+        <div class="metric-strip-item">
+          <div class="metric-strip-num">0</div>
+          <div class="metric-strip-label">Accidentes (HSE)</div>
+        </div>
+      `;
+
+      // Galería
+      const galleryMainImg = document.getElementById('gallery-main-img');
+      const galleryThumbsContainer = document.getElementById('gallery-thumbs');
+      galleryMainImg.src = project.imageMain;
+      galleryMainImg.alt = project.name;
+
+      galleryThumbsContainer.innerHTML = project.gallery.map((g, idx) => `
+        <div class="detail-thumb-item ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+          <img src="${g.url}" alt="${g.caption}">
+        </div>
+      `).join('');
+
+      galleryThumbsContainer.querySelectorAll('.detail-thumb-item').forEach(thumb => {
+        thumb.addEventListener('click', () => {
+          galleryThumbsContainer.querySelectorAll('.detail-thumb-item').forEach(t => t.classList.remove('active'));
+          thumb.classList.add('active');
+          const idx = parseInt(thumb.dataset.index, 10);
+          galleryMainImg.style.opacity = '0.5';
+          setTimeout(() => {
+            galleryMainImg.src = project.gallery[idx].url;
+            galleryMainImg.style.opacity = '1';
+          }, 150);
+        });
+      });
+
+      // Alcance de Servicios
+      const scopeContainer = document.getElementById('scope-services-list');
+      scopeContainer.innerHTML = project.scopeServices.map(s => `
+        <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-md); padding:var(--space-md) var(--space-lg); display:flex; gap:var(--space-md); align-items:flex-start;">
+          <div style="color:var(--primary); font-size:1.2rem; line-height:1; margin-top:2px;">✔</div>
+          <div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--text-primary); margin:0 0 4px 0;">${s.title}</h4>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin:0;">${s.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // Planos de Ingeniería y SVG Vectorial
+      const drawingsNav = document.getElementById('drawings-nav');
+      const drawingDisplay = document.getElementById('drawing-display');
+
+      drawingsNav.innerHTML = project.engineeringDrawings.map((d, idx) => `
+        <button class="typology-tab-btn ${idx === 0 ? 'active' : ''}" data-index="${idx}">
+          ${d.title}
+        </button>
+      `).join('');
+
+      function getEngineeringSvg(code) {
+        if (code === 'plan-cimentacion') {
+          return `
+            <svg viewBox="0 0 400 300" width="100%" height="240" style="max-width:380px;">
+              <rect x="20" y="20" width="360" height="260" fill="none" stroke="var(--primary)" stroke-width="3"/>
+              <!-- Muro pantalla exterior -->
+              <rect x="25" y="25" width="350" height="20" fill="rgba(10,104,71,0.2)" stroke="var(--primary)" stroke-width="2"/>
+              <text x="200" y="38" text-anchor="middle" fill="var(--primary)" font-size="10" font-weight="700">MURO PANTALLA DE CONCRETO (E=0.60m)</text>
+              <!-- Líneas de anclajes activos -->
+              <line x1="80" y1="45" x2="80" y2="120" stroke="#E11D48" stroke-width="2" stroke-dasharray="4"/>
+              <line x1="200" y1="45" x2="200" y2="120" stroke="#E11D48" stroke-width="2" stroke-dasharray="4"/>
+              <line x1="320" y1="45" x2="320" y2="120" stroke="#E11D48" stroke-width="2" stroke-dasharray="4"/>
+              <circle cx="80" cy="120" r="5" fill="#E11D48"/>
+              <circle cx="200" cy="120" r="5" fill="#E11D48"/>
+              <circle cx="320" cy="120" r="5" fill="#E11D48"/>
+              <!-- Platea de cimentacion -->
+              <rect x="40" y="160" width="320" height="110" fill="rgba(0,102,179,0.08)" stroke="var(--secondary)" stroke-width="2"/>
+              <text x="200" y="210" text-anchor="middle" fill="var(--text-primary)" font-size="12" font-weight="700">PLATEA DE CIMENTACIÓN MACIZA</text>
+              <text x="200" y="230" text-anchor="middle" fill="var(--text-muted)" font-size="10">Espesor = 1.40 m · F'c = 420 kg/cm²</text>
+            </svg>
+          `;
+        } else if (code === 'plan-aislador') {
+          return `
+            <svg viewBox="0 0 400 300" width="100%" height="240" style="max-width:380px;">
+              <!-- Capitel y pedestal inferior -->
+              <rect x="120" y="190" width="160" height="90" fill="rgba(10,104,71,0.15)" stroke="var(--primary)" stroke-width="2"/>
+              <text x="200" y="240" text-anchor="middle" fill="var(--text-primary)" font-size="11" font-weight="600">PEDESTAL DE CIMENTACIÓN</text>
+              <!-- Aislador elastomérico LRB -->
+              <circle cx="200" cy="140" r="45" fill="#1E293B" stroke="#F59E0B" stroke-width="3"/>
+              <circle cx="200" cy="140" r="18" fill="#F59E0B"/>
+              <text x="200" y="144" text-anchor="middle" fill="#FFFFFF" font-size="9" font-weight="700">LRB</text>
+              <!-- Capitel superior -->
+              <rect x="100" y="20" width="200" height="75" fill="rgba(0,102,179,0.15)" stroke="var(--secondary)" stroke-width="2"/>
+              <text x="200" y="60" text-anchor="middle" fill="var(--secondary)" font-size="11" font-weight="700">CAPITEL SUPERIOR ESTRUCTURAL</text>
+              <line x1="20" y1="140" x2="380" y2="140" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5"/>
+              <text x="60" y="130" fill="#64748B" font-size="9">GAP SÍSMICO 35 cm</text>
+            </svg>
+          `;
+        } else {
+          return `
+            <svg viewBox="0 0 400 300" width="100%" height="240" style="max-width:380px;">
+              <rect x="20" y="20" width="360" height="260" fill="none" stroke="var(--primary)" stroke-width="3"/>
+              <!-- Columnas y placas estructurales -->
+              <rect x="30" y="30" width="30" height="60" fill="var(--primary)"/>
+              <rect x="340" y="30" width="30" height="60" fill="var(--primary)"/>
+              <rect x="30" y="210" width="30" height="60" fill="var(--primary)"/>
+              <rect x="340" y="210" width="30" height="60" fill="var(--primary)"/>
+              <!-- Placa central sismo-resistente -->
+              <rect x="175" y="100" width="50" height="100" fill="var(--primary)"/>
+              <text x="200" y="155" text-anchor="middle" fill="#FFFFFF" font-size="10" font-weight="700">PLACA P-1</text>
+              <!-- Trazos de losa postensada -->
+              <line x1="60" y1="60" x2="175" y2="130" stroke="#0066B3" stroke-width="2" stroke-dasharray="3"/>
+              <line x1="340" y1="60" x2="225" y2="130" stroke="#0066B3" stroke-width="2" stroke-dasharray="3"/>
+              <line x1="60" y1="240" x2="175" y2="170" stroke="#0066B3" stroke-width="2" stroke-dasharray="3"/>
+              <line x1="340" y1="240" x2="225" y2="170" stroke="#0066B3" stroke-width="2" stroke-dasharray="3"/>
+              <text x="200" y="260" text-anchor="middle" fill="var(--text-muted)" font-size="10">Trazado de cables de postensado no adherido</text>
+            </svg>
+          `;
+        }
+      }
+
+      function renderDrawing(index) {
+        const d = project.engineeringDrawings[index];
+        drawingDisplay.innerHTML = `
+          <div class="plan-svg-box">
+            ${getEngineeringSvg(d.svgCode)}
+          </div>
+          <div>
+            <span style="font-size:0.75rem; text-transform:uppercase; font-weight:700; color:var(--primary); letter-spacing:0.05em;">${d.category}</span>
+            <h3 style="font-size:1.35rem; color:var(--text-primary); margin:4px 0 var(--space-md) 0;">${d.title}</h3>
+            <p style="color:var(--text-secondary); line-height:1.7; font-size:0.95rem; margin-bottom:var(--space-xl);">
+              ${d.desc}
+            </p>
+
+            <table class="plan-specs-table">
+              <tr>
+                <td>Sistema Estructural</td>
+                <td>${project.structuralSystem.split(' ')[0]} ${project.structuralSystem.split(' ')[1] || ''}</td>
+              </tr>
+              <tr>
+                <td>Resistencia Concreto</td>
+                <td>${project.concreteVolume.split(' ')[1] || "F'c 350-420"}</td>
+              </tr>
+              <tr>
+                <td>Volumen Estimado</td>
+                <td>${project.concreteVolume.split(' ')[0]} m³</td>
+              </tr>
+              <tr>
+                <td>Modelado Digital</td>
+                <td>${project.bimLOD}</td>
+              </tr>
+            </table>
+
+            <a href="#licitacion" class="btn btn-primary" style="width:100%; justify-content:center;">
+              Consultar Compatibilidad Técnica →
+            </a>
+          </div>
+        `;
+      }
+
+      drawingsNav.querySelectorAll('.typology-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          drawingsNav.querySelectorAll('.typology-tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderDrawing(parseInt(btn.dataset.index, 10));
+        });
+      });
+
+      renderDrawing(0);
+
+      // Ficha Técnica de Calidad y Especificaciones
+      const engSpecsGrid = document.getElementById('engineering-specs-grid');
+      engSpecsGrid.innerHTML = project.technicalHighlights.map(t => `
+        <div class="eng-spec-item">
+          <div class="eng-spec-label">${t.label}</div>
+          <div class="eng-spec-val">${t.value}</div>
+        </div>
+      `).join('');
+
+      // Estimador de Ratios Constructivos
+      const areaSlider = document.getElementById('calc-area-slider');
+      const basementsSlider = document.getElementById('calc-basements-slider');
+      const floorsSlider = document.getElementById('calc-floors-slider');
+
+      const areaDisplay = document.getElementById('calc-area-display');
+      const basementsDisplay = document.getElementById('calc-basements-display');
+      const floorsDisplay = document.getElementById('calc-floors-display');
+
+      const timeResult = document.getElementById('calc-time-result');
+      const ratiosSummary = document.getElementById('calc-ratios-summary');
+
+      function updateEstimator() {
+        const area = parseInt(areaSlider.value, 10);
+        const basements = parseInt(basementsSlider.value, 10);
+        const floors = parseInt(floorsSlider.value, 10);
+
+        areaDisplay.textContent = `${area.toLocaleString()} m²`;
+        basementsDisplay.textContent = `${basements} Sótanos`;
+        floorsDisplay.textContent = `${floors} Pisos`;
+
+        // Cálculo referencial de plazos
+        const excavationMonths = basements * 1.5 + 1;
+        const structureMonths = floors * 0.6;
+        const finishesMonths = 5;
+        const totalMonths = Math.round(excavationMonths + structureMonths * 0.7 + finishesMonths * 0.5);
+
+        // Ratios de concreto (0.28 a 0.32 m3/m2) y acero (30 a 35 kg/m2)
+        const concreteEst = Math.round(area * 0.30);
+        const steelEst = Math.round(area * 0.033);
+
+        timeResult.textContent = `${totalMonths} Meses`;
+        ratiosSummary.innerHTML = `
+          Concreto estructural estimado: <strong>~${concreteEst.toLocaleString()} m³</strong><br>
+          Acero corrugado estimado: <strong>~${steelEst.toLocaleString()} Tn</strong>
+        `;
+      }
+
+      areaSlider.addEventListener('input', updateEstimator);
+      basementsSlider.addEventListener('input', updateEstimator);
+      floorsSlider.addEventListener('input', updateEstimator);
+      updateEstimator();
+
+      // Avance de Obra
+      document.getElementById('progress-total-percent').textContent = `${project.progress.total}%`;
+      document.getElementById('progress-total-bar').style.width = `${project.progress.total}%`;
+
+      const phasesList = document.getElementById('progress-phases-list');
+      phasesList.innerHTML = project.progress.phases.map(ph => `
+        <div>
+          <div style="display:flex; justify-content:space-between; font-size:0.85rem; font-weight:600; margin-bottom:4px;">
+            <span style="color:var(--text-primary);">${ph.name}</span>
+            <span style="color:var(--primary);">${ph.percent}% (${ph.status})</span>
+          </div>
+          <div class="progress-track" style="height:8px;">
+            <div class="progress-fill" style="width: ${ph.percent}%;"></div>
+          </div>
+        </div>
+      `).join('');
+
+      // Formulario Sidebar
+      const inqForm = document.getElementById('construction-inquiry-form');
+      const inqResp = document.getElementById('cinq-form-response');
+
+      inqForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = inqForm.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando solicitud...';
+
+        setTimeout(() => {
+          inqResp.style.display = 'block';
+          inqResp.style.color = '#10B981';
+          inqResp.textContent = `¡Solicitud enviada con éxito! La Gerencia Técnica de AROKIA se comunicará en un plazo máximo de 24 horas.`;
+          inqForm.reset();
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Solicitar Propuesta Técnica de Construcción';
+        }, 1200);
+      });
+
+      // Descargar Dossier
+      document.getElementById('download-dossier-btn').addEventListener('click', () => {
+        alert(`Generando Dossier Técnico de Construcción para ${project.name} en formato PDF...`);
+      });
+
+      // Otras Obras
+      const relatedGrid = document.getElementById('related-projects-grid');
+      const otherProjects = getAllProjects().filter(p => p.id !== project.id).slice(0, 3);
+      relatedGrid.innerHTML = otherProjects.map(p => `
+        <article class="project-card reveal visible">
+          <a href="proyecto-detalle.html?id=${p.id}" class="project-card-image" style="display:block;">
+            <img src="${p.imageMain}" alt="${p.name}" loading="lazy">
+          </a>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <h3 class="project-card-name"><a href="proyecto-detalle.html?id=${p.id}" style="color:inherit; text-decoration:none;">${p.name}</a></h3>
+              <span class="project-badge ${p.badgeClass}">${p.statusLabel}</span>
+            </div>
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;">${p.location} — Mandante: ${p.client}</p>
+            <div class="project-specs-list">
+              <span class="project-spec-pill">📐 ${p.builtArea}</span>
+              <span class="project-spec-pill">🏗️ ${p.totalLevels}</span>
+            </div>
+            <div class="project-card-footer">
+              <div class="project-price-preview">
+                <span class="project-price-label">Modalidad</span>
+                <span class="project-price-amount" style="font-size:0.95rem;">${p.contractType}</span>
+              </div>
+              <a href="proyecto-detalle.html?id=${p.id}" class="btn-card-detail">Ficha Técnica →</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    });
+  </script>
+</body>
+</html>

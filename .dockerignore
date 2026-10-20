@@ -1,0 +1,7 @@
+.git
+.gitignore
+.dockerignore
+*.md
+reference_image.jpg
+logo_page.png
+AROKIA_LOGO.pdf
